@@ -30,7 +30,7 @@ func handleRequest(request *http.Request, resultReceiver chan *http.Response) {
         panic(err)
     }
     fmt.Println(string(dump))
-    content := "Hello World\n"
+    content := string(dump) + "\n"
     // レスポンスを書き込む
     // セッションを維持するためにKeep-Aliveでないといけない
     response := &http.Response{

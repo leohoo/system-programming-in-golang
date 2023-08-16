@@ -29,7 +29,7 @@ func main() {
     if err != nil {
         panic(err)
     }
-    dump, err := httputil.DumpResponse(response, false)
+    dump, err := httputil.DumpResponse(response, true)
     if err != nil {
         panic(err)
     }
