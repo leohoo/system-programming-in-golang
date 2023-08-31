@@ -3,6 +3,7 @@ module golang.sys/ch12
 go 1.20
 
 require (
+	github.com/creack/pty v1.1.18 // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect

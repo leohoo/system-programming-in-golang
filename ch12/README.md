@@ -52,3 +52,25 @@ cat /proc/{process id}/cmdline
 
 # 12.5
 
+# 12.6
+
+# 12.7
+
+fork
+
+Go 1.9からは、Linuxでamd64アーキテクチャの場合にのみ、CLONE_VFORKと CLONE_VM を付与した clone() システムコールを使っています。
+
+
+posix_spawn is a function provided by the POSIX (Portable Operating System Interface) standard, and it's used to spawn (or create) processes. It's an alternative to the traditional fork() and exec() combination commonly used in UNIX-like systems to create new processes. The primary advantage of posix_spawn over fork() and exec() is its efficiency, especially in situations where the parent process consumes a large amount of memory.
+
+Memoryのcopy-on-writeとGC
+
+daemon()
+
+# 12.8
+
+- vfork()
+- rfork()
+- clone()
+
+# 12.9
