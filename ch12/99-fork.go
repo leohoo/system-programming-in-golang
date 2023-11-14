@@ -7,6 +7,8 @@ import (
 )
 
 func main() {
+    fmt.Println(os.Args)
+
     // Call fork to create a new process
     pid, err := syscall.ForkExec(os.Args[0], os.Args, nil)
     if err != nil {

@@ -54,6 +54,13 @@ cat /proc/{process id}/cmdline
 
 # 12.6
 
+```
+$ echo a | ./check 2>1 | cat
+stdin: pipe
+stdout: pipe
+stderr: pipe
+```
+
 # 12.7
 
 fork
@@ -73,4 +80,9 @@ daemon()
 - rfork()
 - clone()
 
+- syscall.forkExec() = CreateProcess + exec
+- libc_fork_trampoline
+
 # 12.9
+
+https://ascii.jp/serialarticles/1235262/
