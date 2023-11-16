@@ -95,3 +95,13 @@ nm hello
 ```
 
 https://github.com/below/HelloSilicon
+
+# 17.2
+## Runtime
+## Linker
+
+# 17.3
+
+# 17.4
+
+# 17.5
