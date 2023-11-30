@@ -103,5 +103,36 @@ https://github.com/below/HelloSilicon
 # 17.3
 
 # 17.4
+```
+$ realpath $(which go)
+/opt/homebrew/Cellar/go/1.20.6/libexec/bin/go
+
+$ find /opt/homebrew/Cellar/go/1.20.6 -name rt0_darwin_amd64.s
+/opt/homebrew/Cellar/go/1.20.6/libexec/src/runtime/rt0_darwin_amd64.s
+
+$ cat -n /opt/homebrew/Cellar/go/1.20.6/libexec/src/runtime/rt0_darwin_amd64.s
+     1	// Copyright 2009 The Go Authors. All rights reserved.
+     2	// Use of this source code is governed by a BSD-style
+     3	// license that can be found in the LICENSE file.
+     4
+     5	#include "textflag.h"
+     6
+     7	TEXT _rt0_amd64_darwin(SB),NOSPLIT,$-8
+     8		JMP	_rt0_amd64(SB)
+     9
+    10	// When linking with -shared, this symbol is called when the shared library
+    11	// is loaded.
+    12	TEXT _rt0_amd64_darwin_lib(SB),NOSPLIT,$0
+    13		JMP	_rt0_amd64_lib(SB)
+```
 
 # 17.5
+
+```
+$ python -h
+...
+-v     : verbose (trace import statements); also PYTHONVERBOSE=x
+         can be supplied multiple times to increase verbosity
+...
+```
+
